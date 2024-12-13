@@ -1,0 +1,86 @@
+/*PROGRESS*/
+.animation-progress {
+  animation-name: scaleProgress;
+  animation-duration: auto;
+  animation-timing-function: linear;
+  animation-timeline: scroll(root);
+  z-index: 2;
+}
+
+@keyframes scaleProgress {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/*TYPING*/
+.animation-typing {
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 2s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: var(--secondary);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*SLIDING*/
+.animation-slide-left {
+  animation: revealing-left 3s;
+}
+
+.animation-slide-right {
+  animation: revealing-right 3s;
+}
+
+/*REVEALING*/
+.animation-revealing-left {
+  animation: revealing-right;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
+}
+
+.animation-revealing-right {
+  animation: revealing-left;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
+}
+
+@keyframes revealing-left {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes revealing-right {
+  from {
+    margin-right: 50%;
+  }
+
+  to {
+    margin-right: 0;
+  }
+}

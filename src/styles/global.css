@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+:root {
+    font-family: "Aldrich", sans-serif;
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary: #1BBBF5;
+    --secondary: #D9307F;
+    --background-primary: #101C26;
+    --background-secondary: #0D0D0D;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-primary)
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
+}

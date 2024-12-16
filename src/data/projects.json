@@ -2,42 +2,41 @@
     {
         "name": "Pokedéx",
         "image": "https://raw.githubusercontent.com/robwilstocco/Pokedex/refs/heads/main/public/images/inicial_page.png",
-        "demo": "",
-        "github": "url",
-        "description": " Uma aplicação Next.js que fornece informações sobre pokemons em forma de cards à partir da 'PokéAPI' "
+        "demo": "https://pokedex-ten-murex-28.vercel.app/",
+        "github": "https://github.com/robwilstocco/Pokedex",
+        "description": " Uma aplicação Next.js que fornece informações sobre pokémons em forma de cards à partir da 'PokéAPI' "
     },
     {
         "name": "project 2",
         "image": "https://place-hold.it/300x200",
-        "demo": "",
         "github": "url",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
         "name": "project 3",
         "image": "https://place-hold.it/300x200",
-        "demo": "",
+        "demo": "#",
         "github": "url",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
         "name": "project 4",
         "image": "https://place-hold.it/300x200",
-        "demo": "",
+        "demo": "#",
         "github": "url",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
         "name": "project 5",
         "image": "https://place-hold.it/300x200",
-        "demo": "",
+        "demo": "#",
         "github": "url",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
         "name": "project 6",
         "image": "https://place-hold.it/300x200",
-        "demo": "",
+        "demo": "#",
         "github": "url",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }

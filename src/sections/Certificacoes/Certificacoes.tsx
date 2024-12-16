@@ -1,17 +1,61 @@
 import Container from "../../components/Container/Container";
+import styles from './Certificacoes.module.css';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import certificates from '../../data/certificates.json';
+import { useState } from "react";
 
 const Certificacoes = () => {
+    const [index, setIndex] = useState(0);
+    const currentProject = certificates[index];
+    const [animationClass, setAnimationClass] = useState("");
+
+    const handleNextProject = () => {
+        setAnimationClass("animation-scale");
+        setTimeout(() => {
+            setIndex(i => (i < certificates.length - 1 ? i + 1 : 0));
+            setAnimationClass("");
+        }, 500);
+    };
+
+    const handleLastProject = () => {
+        setAnimationClass("animation-scale");
+        setTimeout(() => {
+            setIndex(i => (i > 0 ? i - 1 : certificates.length - 1));
+            setAnimationClass("");
+        }, 500);
+    };
     return (
         <Container id='certificacoes'>
-            <div className="animation-revealing-right" style={{ display: 'flex', gap: '3rem' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', gap: '1rem', maxWidth: '45vw' }}>
-                    <h2 style={{ color: '#2BBBF5' }}>Certificações</h2>
-                    <p style={{ color: 'white' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+            <div className={`${styles.wrapper} animation-revealing-right`}>
+                <h2 className={styles.title}>{'<Certificações/>'}</h2>
+                <div className={styles.carousel}>
+                    <button className={styles.leftButton} onClick={handleLastProject}>
+                        <FaAngleLeft />
+                    </button>
+                    <div className={`${styles.project} ${animationClass}`}>
+                        <h3>{currentProject.title}</h3>
+                        <p>{currentProject.school}</p>
+                        <p>{currentProject.duration}</p>
+                        <p>{currentProject.date}</p>
+                        <p>{currentProject.url}</p>
+                    </div>
+                    <div className={`${styles.project} ${animationClass}`}>
+                        <h3>{currentProject.title}</h3>
+                        <p>{currentProject.school}</p>
+                        <p>{currentProject.duration}</p>
+                        <p>{currentProject.date}</p>
+                        <p>{currentProject.url}</p>
+                    </div>
+                    <div className={`${styles.project} ${animationClass}`}>
+                        <h3>{currentProject.title}</h3>
+                        <p>{currentProject.school}</p>
+                        <p>{currentProject.duration}</p>
+                        <p>{currentProject.date}</p>
+                        <p>{currentProject.url}</p>
+                    </div>
+                    <button className={styles.rightButton} onClick={handleNextProject}>
+                        <FaAngleRight />
+                    </button>
                 </div>
             </div>
         </Container>

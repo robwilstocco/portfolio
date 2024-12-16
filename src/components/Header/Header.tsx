@@ -1,5 +1,4 @@
 import styles from './Header.module.css';
-// import animations from '../../styles/Animations.module.css'
 
 const Header = () => {
   return (

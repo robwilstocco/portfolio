@@ -34,9 +34,15 @@ const Projetos = () => {
                         <FaAngleLeft />
                     </button>
                     <div className={`${styles.project} ${animationClass}`}>
-                        <h3>{currentProject.name}</h3>
-                        <img className={styles.aboutImage} src={currentProject.image} alt="project" />
-                        <p>{currentProject.description}</p>
+                        <div className={`${styles.projectDetail}`}>
+                            <h3>{currentProject.name}</h3>
+                            <img className={styles.aboutImage} src={currentProject.image} alt="project" />
+                            <p>{currentProject.description}</p>
+                        </div>
+                        <div className={`${styles.projectLinks}`}>
+                            {currentProject.demo && (<a href={currentProject.demo}>Link Demo</a>)}
+                            <a href={currentProject.github}>Link Github</a>
+                        </div>
                     </div>
                     <button className={styles.rightButton} onClick={handleNextProject}>
                         <FaAngleRight />

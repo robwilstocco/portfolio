@@ -1,31 +1,36 @@
 [
     {
-        "title": "project",
-        "school": "alura", 
+        "title": "project 1",
+        "school": "alura",
+        "duration": "24h",
         "url": "url",
         "date": "01/2001"
     },
     {
-        "title": "project",
-        "school": "alura", 
+        "title": "project 2",
+        "school": "alura",        
+        "duration": "24h",
         "url": "url",
         "date": "01/2001"
     },
     {
-        "title": "project",
-        "school": "alura", 
+        "title": "project 3",
+        "school": "alura",        
+        "duration": "24h",
         "url": "url",
         "date": "01/2001"
     },
     {
-        "title": "project",
-        "school": "alura", 
+        "title": "project 4",
+        "school": "alura",        
+        "duration": "24h",
         "url": "url",
         "date": "01/2001"
     },
     {
-        "title": "project",
-        "school": "alura", 
+        "title": "project 5",
+        "school": "alura",        
+        "duration": "24h",
         "url": "url",
         "date": "01/2001"
     }

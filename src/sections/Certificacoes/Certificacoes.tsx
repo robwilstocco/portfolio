@@ -6,10 +6,10 @@ import { useState } from "react";
 
 const Certificacoes = () => {
     const [index, setIndex] = useState(0);
-    const currentProject = certificates[index];
+    const currentCertificate = certificates[index];
     const [animationClass, setAnimationClass] = useState("");
 
-    const handleNextProject = () => {
+    const handleNextCertificate = () => {
         setAnimationClass("animation-scale");
         setTimeout(() => {
             setIndex(i => (i < certificates.length - 1 ? i + 1 : 0));
@@ -17,7 +17,7 @@ const Certificacoes = () => {
         }, 500);
     };
 
-    const handleLastProject = () => {
+    const handleLastCertificate = () => {
         setAnimationClass("animation-scale");
         setTimeout(() => {
             setIndex(i => (i > 0 ? i - 1 : certificates.length - 1));
@@ -29,31 +29,40 @@ const Certificacoes = () => {
             <div className={`${styles.wrapper} animation-revealing-right`}>
                 <h2 className={styles.title}>{'<Certificações/>'}</h2>
                 <div className={styles.carousel}>
-                    <button className={styles.leftButton} onClick={handleLastProject}>
+                    <button className={styles.leftButton} onClick={handleLastCertificate
+
+                    }>
                         <FaAngleLeft />
                     </button>
-                    <div className={`${styles.project} ${animationClass}`}>
-                        <h3>{currentProject.title}</h3>
-                        <p>{currentProject.school}</p>
-                        <p>{currentProject.duration}</p>
-                        <p>{currentProject.date}</p>
-                        <p>{currentProject.url}</p>
+                    <div className={`${styles.certificate} ${animationClass}`}>
+                        <h3 className={styles.certicateTitle}>{currentCertificate
+                            .title}</h3>
+                        <div className={styles.details}>
+                            <div className={styles.info}>
+                                <span>Instituição: </span>
+                                <p>{currentCertificate
+                                    .school}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Duração: </span>
+                                <p>{currentCertificate
+                                    .duration}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Conclusão: </span>
+                                <p>{currentCertificate
+                                    .date}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Certificado: </span>
+                                <a href={currentCertificate
+                                    .url}>Clique aqui</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className={`${styles.project} ${animationClass}`}>
-                        <h3>{currentProject.title}</h3>
-                        <p>{currentProject.school}</p>
-                        <p>{currentProject.duration}</p>
-                        <p>{currentProject.date}</p>
-                        <p>{currentProject.url}</p>
-                    </div>
-                    <div className={`${styles.project} ${animationClass}`}>
-                        <h3>{currentProject.title}</h3>
-                        <p>{currentProject.school}</p>
-                        <p>{currentProject.duration}</p>
-                        <p>{currentProject.date}</p>
-                        <p>{currentProject.url}</p>
-                    </div>
-                    <button className={styles.rightButton} onClick={handleNextProject}>
+                    <button className={styles.rightButton} onClick={handleNextCertificate
+
+                    }>
                         <FaAngleRight />
                     </button>
                 </div>

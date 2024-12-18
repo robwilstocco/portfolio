@@ -3,6 +3,7 @@ import styles from './Certificacoes.module.css';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import certificates from '../../data/certificates.json';
 import { useState } from "react";
+import Wrapper from "../../components/Wrapper/Wrapper";
 
 const Certificacoes = () => {
     const [index, setIndex] = useState(0);
@@ -26,47 +27,76 @@ const Certificacoes = () => {
     };
     return (
         <Container id='certificacoes'>
-            <div className={`${styles.wrapper} animation-revealing-right`}>
+            <Wrapper animation="animation-revealing-right" direction="column">
                 <h2 className={styles.title}>{'<Certificações/>'}</h2>
                 <div className={styles.carousel}>
-                    <button className={styles.leftButton} onClick={handleLastCertificate
-
-                    }>
-                        <FaAngleLeft />
-                    </button>
+                    <button className={styles.leftButton} onClick={handleLastCertificate}><FaAngleLeft /></button>
                     <div className={`${styles.certificate} ${animationClass}`}>
-                        <h3 className={styles.certicateTitle}>{currentCertificate
-                            .title}</h3>
+                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
                         <div className={styles.details}>
                             <div className={styles.info}>
                                 <span>Instituição: </span>
-                                <p>{currentCertificate
-                                    .school}</p>
+                                <p>{currentCertificate.school}</p>
                             </div>
                             <div className={styles.info}>
                                 <span>Duração: </span>
-                                <p>{currentCertificate
-                                    .duration}</p>
+                                <p>{currentCertificate.duration}</p>
                             </div>
                             <div className={styles.info}>
                                 <span>Conclusão: </span>
-                                <p>{currentCertificate
-                                    .date}</p>
+                                <p>{currentCertificate.date}</p>
                             </div>
                             <div className={styles.info}>
                                 <span>Certificado: </span>
-                                <a href={currentCertificate
-                                    .url}>Clique aqui</a>
+                                <a href={currentCertificate.url}>Clique aqui</a>
                             </div>
                         </div>
                     </div>
-                    <button className={styles.rightButton} onClick={handleNextCertificate
-
-                    }>
-                        <FaAngleRight />
-                    </button>
+                    <div className={`${styles.certificate} ${animationClass}`}>
+                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
+                        <div className={styles.details}>
+                            <div className={styles.info}>
+                                <span>Instituição: </span>
+                                <p>{currentCertificate.school}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Duração: </span>
+                                <p>{currentCertificate.duration}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Conclusão: </span>
+                                <p>{currentCertificate.date}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Certificado: </span>
+                                <a href={currentCertificate.url}>Clique aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`${styles.certificate} ${animationClass}`}>
+                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
+                        <div className={styles.details}>
+                            <div className={styles.info}>
+                                <span>Instituição: </span>
+                                <p>{currentCertificate.school}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Duração: </span>
+                                <p>{currentCertificate.duration}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Conclusão: </span>
+                                <p>{currentCertificate.date}</p>
+                            </div>
+                            <div className={styles.info}>
+                                <span>Certificado: </span>
+                                <a href={currentCertificate.url}>Clique aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button className={styles.rightButton} onClick={handleNextCertificate}><FaAngleRight /></button>
                 </div>
-            </div>
+            </Wrapper>
         </Container>
     )
 }

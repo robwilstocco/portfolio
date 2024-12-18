@@ -1,10 +1,11 @@
 import Container from "../../components/Container/Container";
+import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from './Inicio.module.css';
 
 const Inicio = () => {
     return (
         <Container id='inicio'>
-            <div className={styles.mainWrapper}>
+            <Wrapper>
                 <div className={`${styles.titleWrapper} animation-slide-left`}>
                     <h1 className={styles.title}>Robert Wilson</h1>
                     <div>
@@ -12,7 +13,7 @@ const Inicio = () => {
                     </div>
                 </div>
                 <img className={styles.image} src="../developer.png" alt="frontend developer" />
-            </div>
+            </Wrapper>
         </Container>
     )
 }

@@ -1,11 +1,3 @@
-.mainWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  overflow-x: hidden;
-}
-
 .titleWrapper {
   display: flex;
   flex-direction: column;
@@ -20,13 +12,6 @@
   text-wrap: nowrap;
 }
 
-.image {
-  border: 5px solid var(--black);
-  width: 500px;
-  height: 500px;
-  border-radius: 5%;
-}
-
 .subTitle {
   border-right: 2px solid var(--secondary);
   text-shadow: var(--secondary) 0px 0px 10px;
@@ -34,4 +19,11 @@
   font-size: 2em;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.image {
+  border: 5px solid var(--black);
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
 }

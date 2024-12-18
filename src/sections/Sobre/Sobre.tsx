@@ -1,10 +1,11 @@
 import Container from "../../components/Container/Container";
+import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from './Sobre.module.css';
 
 const Sobre = () => {
     return (
         <Container id='sobre'>
-            <div className={`${styles.wrapper} animation-revealing-left`}>
+            <Wrapper animation="animation-revealing-left">
                 <img className={styles.aboutImage} src="https://place-hold.it/300x300" alt="robert wilson" />
                 <div className={styles.textWrapper}>
                     <h2 className={styles.aboutTitle}>{'< Sobre mim/>'}</h2>
@@ -19,7 +20,7 @@ const Sobre = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </Wrapper>
         </Container>
     )
 }

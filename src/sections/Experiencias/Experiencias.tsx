@@ -1,11 +1,12 @@
 import Container from "../../components/Container/Container";
+import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from './Experiencias.module.css';
 import './test.css';
 
 const Experiencias = () => {
     return (
         <Container id='experiencia'>
-            <div className="animation-revealing-right">
+            <Wrapper animation="animation-revealing-right" direction="column">
                 <h2 className={styles.title}>{'<Experiências/>'}</h2>
                 <div className="timeline">
                     <ul>
@@ -38,7 +39,7 @@ const Experiencias = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </Wrapper>
         </Container>
     )
 }

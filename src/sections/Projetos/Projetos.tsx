@@ -3,6 +3,7 @@ import styles from './Projetos.module.css';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import projects from '../../data/projects.json';
 import { useState } from "react";
+import Wrapper from "../../components/Wrapper/Wrapper";
 
 const Projetos = () => {
     const [index, setIndex] = useState(0);
@@ -27,7 +28,7 @@ const Projetos = () => {
 
     return (
         <Container id='projetos'>
-            <div className={`${styles.wrapper} animation-revealing-left`}>
+            <Wrapper animation="animation-revealing-left" direction="column">
                 <h2 className={styles.title}>{'<Projetos/>'}</h2>
                 <div className={styles.carousel}>
                     <button className={styles.leftButton} onClick={handleLastProject}>
@@ -48,7 +49,7 @@ const Projetos = () => {
                         <FaAngleRight />
                     </button>
                 </div>
-            </div>
+            </Wrapper>
         </Container>
     )
 }

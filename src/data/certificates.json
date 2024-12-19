@@ -33,5 +33,19 @@
         "duration": "24h",
         "url": "url",
         "date": "01/2001"
+    },
+    {
+        "title": "project 6",
+        "school": "alura",        
+        "duration": "24h",
+        "url": "url",
+        "date": "01/2001"
+    },
+    {
+        "title": "project 7",
+        "school": "alura",        
+        "duration": "24h",
+        "url": "url",
+        "date": "01/2001"
     }
 ]

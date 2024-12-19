@@ -1,11 +1,11 @@
 import styles from './Wrapper.module.css';
 
-type Wrapper = {
+interface WrapperType {
   children: React.ReactNode,
   direction?: 'row' | 'column',
   animation?: 'animation-revealing-left' | 'animation-revealing-right' | ''
 }
-const Wrapper = ({ children, direction = 'row', animation = '' }: Wrapper) => {
+const Wrapper = ({ children, direction = 'row', animation = '' }: WrapperType) => {
   return (
     <div className={`${styles.wrapper} ${animation}`} style={{ flexDirection: `${direction}` }}>
       {children}

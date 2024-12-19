@@ -1,100 +1,51 @@
-import Container from "../../components/Container/Container";
-import styles from './Certificacoes.module.css';
+import { useEffect, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import styles from './Certificacoes.module.css';
 import certificates from '../../data/certificates.json';
-import { useState } from "react";
+import Container from "../../components/Container/Container";
 import Wrapper from "../../components/Wrapper/Wrapper";
+import Certificate from "../../components/Certificate/Certificate";
 
 const Certificacoes = () => {
     const [index, setIndex] = useState(0);
-    const currentCertificate = certificates[index];
-    const [animationClass, setAnimationClass] = useState("");
+    const [leftButtonDisabled, setLeftButtonDisabled] = useState(true);
+    const [rightButtonDisabled, setRightButtonDisabled] = useState(false);
+
+    const first = certificates[index];
+    const second = certificates[index + 1];
+    const third = certificates[index + 2];
+
+    useEffect(() => {
+        if (index === 0) {
+            setLeftButtonDisabled(true);
+        } else if (index + 3 === certificates.length) {
+            setRightButtonDisabled(true);
+        } else {
+            setLeftButtonDisabled(false);
+            setRightButtonDisabled(false);
+        }
+    }, [index]);
 
     const handleNextCertificate = () => {
-        setAnimationClass("animation-scale");
-        setTimeout(() => {
-            setIndex(i => (i < certificates.length - 1 ? i + 1 : 0));
-            setAnimationClass("");
-        }, 500);
+        return index + 2 < certificates.length - 1 && setIndex(i => i + 1);
     };
 
     const handleLastCertificate = () => {
-        setAnimationClass("animation-scale");
-        setTimeout(() => {
-            setIndex(i => (i > 0 ? i - 1 : certificates.length - 1));
-            setAnimationClass("");
-        }, 500);
+        return index - 1 >= 0 && setIndex(i => i - 1);
     };
+
     return (
         <Container id='certificacoes'>
             <Wrapper animation="animation-revealing-right" direction="column">
                 <h2 className={styles.title}>{'<Certificações/>'}</h2>
                 <div className={styles.carousel}>
-                    <button className={styles.leftButton} onClick={handleLastCertificate}><FaAngleLeft /></button>
-                    <div className={`${styles.certificate} ${animationClass}`}>
-                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
-                        <div className={styles.details}>
-                            <div className={styles.info}>
-                                <span>Instituição: </span>
-                                <p>{currentCertificate.school}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Duração: </span>
-                                <p>{currentCertificate.duration}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Conclusão: </span>
-                                <p>{currentCertificate.date}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Certificado: </span>
-                                <a href={currentCertificate.url}>Clique aqui</a>
-                            </div>
-                        </div>
+                    <button disabled={leftButtonDisabled} onClick={handleLastCertificate}><FaAngleLeft /></button>
+                    <div style={{ display: 'flex', gap: '2rem' }}>
+                        <Certificate certificate={first} />
+                        <Certificate certificate={second} />
+                        <Certificate certificate={third} />
                     </div>
-                    <div className={`${styles.certificate} ${animationClass}`}>
-                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
-                        <div className={styles.details}>
-                            <div className={styles.info}>
-                                <span>Instituição: </span>
-                                <p>{currentCertificate.school}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Duração: </span>
-                                <p>{currentCertificate.duration}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Conclusão: </span>
-                                <p>{currentCertificate.date}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Certificado: </span>
-                                <a href={currentCertificate.url}>Clique aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.certificate} ${animationClass}`}>
-                        <h3 className={styles.certicateTitle}>{currentCertificate.title}</h3>
-                        <div className={styles.details}>
-                            <div className={styles.info}>
-                                <span>Instituição: </span>
-                                <p>{currentCertificate.school}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Duração: </span>
-                                <p>{currentCertificate.duration}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Conclusão: </span>
-                                <p>{currentCertificate.date}</p>
-                            </div>
-                            <div className={styles.info}>
-                                <span>Certificado: </span>
-                                <a href={currentCertificate.url}>Clique aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button className={styles.rightButton} onClick={handleNextCertificate}><FaAngleRight /></button>
+                    <button disabled={rightButtonDisabled} onClick={handleNextCertificate}><FaAngleRight /></button>
                 </div>
             </Wrapper>
         </Container>

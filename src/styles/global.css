@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    font-family: "Aldrich", sans-serif;
+    font-family: "Saira", sans-serif;
     --white: #FFFFFF;
     --black: #000000;
     --primary: #1BBBF5;

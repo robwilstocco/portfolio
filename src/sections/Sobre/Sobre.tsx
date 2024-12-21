@@ -12,12 +12,13 @@ const Sobre = () => {
                         <h2 className={styles.aboutTitle}>{'< Sobre mim/>'}</h2>
                         <div>
                             <p className={styles.text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Desde pequeno interessado por tecnologia e sempre curioso para descobrir como as
+                                coisas funcionam. Essa curiosidade acabou me levando à carreira de desenvolvedor,
+                                onde pude ver a mágica de códigos se tornarem belas interfaces e sistemas inteiros.
                             </p>
                             <p className={styles.text}>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Sou formado em Ciência da Computação e possuo experiência em Desenvolvimento Frontend, onde atuei em diversos
+                                projetos de modernização de sistemas legados em Flash.
                             </p>
                         </div>
                     </div>

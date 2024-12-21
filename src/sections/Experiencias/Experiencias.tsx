@@ -11,29 +11,23 @@ const Experiencias = () => {
                 <div className="timeline">
                     <ul>
                         <li>
-                            <span>3rd January 2020</span>
+                            <span>Desenvolvedor Frontend Pleno - Setembro/2022 a Agosto/2023</span>
                             <div className="content">
-                                <h3>What Is Lorem Ipsum?</h3>
+                                <h3>Triad Systems</h3>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    Trabalhei na manutenção dos projetos revitalizados e na implementação de projetos
+                                    internos utilizando Node.js, PostgreSQL, React.js e Typescript.
                                 </p>
                             </div>
                         </li>
                         <li>
-                            <span>21st Jun 2019</span>
+                            <span> Desenvolvedor Frontend Junior - Julho/2019 a Agosto/2022</span>
                             <div className="content">
-                                <h3>What Is Lorem Ipsum?</h3>
+                                <h3>Triad Systems</h3>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <span>15th April 2018</span>
-                            <div className="content">
-                                <h3>What Is Lorem Ipsum?</h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Trabalhei na parte do frontend na revitalização de sistemas, onde modernizamos suas
+                                    interfaces e funcionalidades utilizando React.js, Typescript, Styled Components,
+                                    Redux.js.
                                 </p>
                             </div>
                         </li>

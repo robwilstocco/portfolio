@@ -4,9 +4,3 @@
     align-items: center;
     gap: 5rem;
 }
-
-.title {
-    color: var(--primary);
-    font-size: 3rem;
-    text-wrap: nowrap;
-}

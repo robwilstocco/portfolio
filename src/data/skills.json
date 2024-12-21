@@ -1,30 +1,34 @@
 [
     {
-        "name": "HTML",
-        "percent": "85%"
-    },
-    {
-        "name": "CSS",
-        "percent": "85%"
-    },
-    {
-        "name": "Javascrypt",
+        "name": "Javascript",
         "percent": "90%"
     },
     {
-        "name": "HTML",
+        "name": "HTML/CSS",
+        "percent": "80%"
+    },
+    {
+        "name": "React.js",
         "percent": "85%"
     },
     {
-        "name": "CSS",
-        "percent": "85%"
+        "name": "Typescript",
+        "percent": "75%"
     },
     {
-        "name": "Javascrypt",
-        "percent": "90%"
+        "name": "PostgreSQL",
+        "percent": "55%"
     },
     {
-        "name": "HTML",
-        "percent": "85%"
+        "name": "Redux.js",
+        "percent": "70%"
+    },
+    {
+        "name": "Next.js",
+        "percent": "65%"
+    },
+    {
+        "name": "Node.js",
+        "percent": "60%"
     }
 ]

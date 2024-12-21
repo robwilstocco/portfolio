@@ -27,7 +27,7 @@
 }
 
 .timeline ul li .content h3 {
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 17px;
     padding-top: 5px;
 }

@@ -4,48 +4,90 @@
         "school": "Alura",
         "duration": "51 h",
         "url": "https://cursos.alura.com.br/user/rw-stocco/degree-html-css-v527396-527396/certificate?lang=pt_BR",
-        "date": " 19 de agosto de 2023"
+        "date": "08/2023"
     },
     {
-        "title": "project 2",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "CSS: aprofunde em estilos",
+        "school": "Alura",        
+        "duration": "36h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-css-estilos-v445565-445565/certificate",
+        "date": "08/2023"
     },
     {
-        "title": "project 3",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "Desenvolva aplicações Web com JavaScript",
+        "school": "Alura",        
+        "duration": "60h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-javascript-front-end-v645755-645755/certificate",
+        "date": "09/2023"
     },
     {
-        "title": "project 4",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "Melhore sua experiência de desenvolvimento com TypeScript",
+        "school": "Alura",        
+        "duration": "31h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-typescript-v309729-309729/certificate",
+        "date": "10/2023"
     },
     {
-        "title": "project 5",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "Gerencie aplicações React com Typescript",
+        "school": "Alura",        
+        "duration": "79h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-react-ts-v581770-581770/certificate",
+        "date": "11/2023"
     },
     {
-        "title": "project 6",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "Melhore sua aplicação React com o Next.js",
+        "school": "Alura",        
+        "duration": "69h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-next-js-357475/certificate",
+        "date": "12/2023"
     },
     {
-        "title": "project 7",
-        "school": "alura",        
-        "duration": "24h",
-        "url": "url",
-        "date": "01/2001"
+        "title": "Aplique TypeScript no front-end",
+        "school": "Alura",
+        "duration": "27h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-typescript-desenvolva-front-end-produtividade-644154/certificate",
+        "date": "06/2024"
+    },
+    {
+        "title": "Desenvolva aplicações Web em JavaScript com tarefas concorrentes e orientadas a objetos",
+        "school": "Alura",        
+        "duration": "23h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-aplicacoes-javascript-tarefas-concorrentes-orientadas-objetoss-543206/certificate",
+        "date": "07/2024"
+    },
+    {
+        "title": "Performe sua aplicação React com Next.js Full stack",
+        "school": "Alura",        
+        "duration": "28h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-react-nextjs-fullstack-534586/certificate",
+        "date": "07/2024"
+    },
+    {
+        "title": "Melhore sua aplicação React com testes automatizados",
+        "school": "Alura",        
+        "duration": "56h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-react-testes-automatizados-546209/certificate",
+        "date": "07/2024"
+    },
+    {
+        "title": "Gerencie estados em React com Redux",
+        "school": "Alura",        
+        "duration": "43h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-react-gestao-estados-495634/certificate",
+        "date": "07/2024"
+    },
+    {
+        "title": "APIs com Node.js e Express",
+        "school": "Alura",        
+        "duration": "75h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-node-js-express-495958/certificate",
+        "date": "08/2024"
+    },
+    {
+        "title": "Impulsione sua aplicação React e consuma APIs",
+        "school": "Alura",        
+        "duration": "42h",
+        "url": "https://cursos.alura.com.br/user/rw-stocco/degree-react-consumindo-apis-458452/certificate",
+        "date": "08/2024"
     }
 ]

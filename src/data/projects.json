@@ -8,7 +8,7 @@
     },
     {
         "name": "Portfólio",
-        "image": "https://place-hold.it/300x200",
+        "image": "https://raw.githubusercontent.com/robwilstocco/portfolio/refs/heads/main/public/demo.png",
         "demo": "https://robwilstocco.github.io/portfolio/",
         "github": "https://github.com/robwilstocco/portfolio",
         "description": "Portfólio desenvolvido para fazer uma breve apresentação sobre mim, minhas experiências e habilidades"

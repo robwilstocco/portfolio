@@ -14,17 +14,17 @@
         "description": "Projeto criado com o objetivo de criar árvores genealógicas de uma maneira simples e prática, utilizando React Flow."
     },
     {
-        "name": "project 3",
-        "image": "https://place-hold.it/300x200",
-        "demo": "#",
-        "github": "url",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "name": "Lista de Compras",
+        "image": "https://raw.githubusercontent.com/robwilstocco/ListaDeComprasV2/refs/heads/main/src/assets/demo.png",
+        "demo": "https://robwilstocco.github.io/ListaDeComprasV2/",
+        "github": "https://github.com/robwilstocco/ListaDeComprasV2",
+        "description": "Esta é uma aplicação que permite o gerenciamento de lista de compras, onde as informações são guardadas no localStorage"
     },
     {
-        "name": "project 4",
+        "name": "Portfólio",
         "image": "https://place-hold.it/300x200",
         "demo": "#",
-        "github": "url",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "github": "https://github.com/robwilstocco/portfolio",
+        "description": "Portfólio desenvolvido para fazer uma breve apresentação sobre mim, minhas experiências e habilidades"
     }
 ]

@@ -1,33 +1,31 @@
 import Container from "../../components/Container/Container";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from './Experiencias.module.css';
-import './test.css';
 
 const Experiencias = () => {
     return (
         <Container id='experiencia'>
             <Wrapper animation="animation-revealing-right" direction="column">
                 <h2 className={styles.title}>{'<Experiências/>'}</h2>
-                <div className="timeline">
+                <div className={styles.timeline}>
                     <ul>
                         <li>
                             <span>Desenvolvedor Frontend Pleno - Setembro/2022 a Agosto/2023</span>
-                            <div className="content">
+                            <div className={styles.content}>
                                 <h3>Triad Systems</h3>
                                 <p>
-                                    Trabalhei na manutenção dos projetos revitalizados e na implementação de projetos
-                                    internos utilizando Node.js, PostgreSQL, React.js e Typescript.
+                                    Atuei no desenvolvimento, correções de bugs e implementação de melhorias dos sistemas revitalizados, além de acompanhar o deploy das aplicações.
                                 </p>
                             </div>
                         </li>
                         <li>
                             <span> Desenvolvedor Frontend Junior - Julho/2019 a Agosto/2022</span>
-                            <div className="content">
+                            <div className={styles.content}>
                                 <h3>Triad Systems</h3>
                                 <p>
-                                    Trabalhei na parte do frontend na revitalização de sistemas, onde modernizamos suas
-                                    interfaces e funcionalidades utilizando React.js, Typescript, Styled Components,
-                                    Redux.js.
+                                    Contribui ativamente na revitalização de sistemas desenvolvidos em Flash (ActionScript 3.0) que foi descontinuado.
+                                    Modernizamos os novos sistema utilizando React.js, Typescript, Styled Components e Material UI,
+                                    gerenciamos os estados com Redux e fizemos a integração com o backend em Java.
                                 </p>
                             </div>
                         </li>

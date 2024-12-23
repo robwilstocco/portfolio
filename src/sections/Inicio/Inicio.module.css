@@ -21,6 +21,19 @@
   overflow: hidden;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0.6;
+}
+
+.icons a svg {
+  width: 35px;
+  height: 35px;
+}
+
 .image {
   border: 5px solid var(--black);
   width: 500px;

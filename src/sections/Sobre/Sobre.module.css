@@ -6,8 +6,10 @@
   gap: 10%;
 }
 
-.teste {
+.contentWrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10%;
   width: 45%;
 }

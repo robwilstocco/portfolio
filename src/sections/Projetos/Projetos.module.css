@@ -84,6 +84,14 @@ svg:hover {
     transition: opacity 0.3s ease;
 }
 
+.projectDetail h3 {
+    font-size: 1.5rem;
+}
+
+.projectDetail p {
+    font-size: 1.1rem;
+}
+
 .projectLinks {
     display: flex;
     flex-direction: column;

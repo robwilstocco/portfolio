@@ -6,8 +6,8 @@ const Sobre = () => {
     return (
         <Container id='sobre'>
             <Wrapper>
-                <div className={`${styles.teste} ${'animation-revealing-left'}`}>
-                    <img className={styles.aboutImage} src="https://place-hold.it/300x300" alt="robert wilson" />
+                <div className={`${styles.contentWrapper} ${'animation-revealing-left'}`}>
+                    <img className={styles.aboutImage} src="aboutImage.jpg" alt="robert wilson" />
                     <div className={styles.textWrapper}>
                         <h2 className={styles.aboutTitle}>{'< Sobre mim/>'}</h2>
                         <div>

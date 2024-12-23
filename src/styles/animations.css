@@ -85,6 +85,7 @@
   }
 }
 
+/*SCALE*/
 .animation-scale {
   animation: scale 1s;
 }

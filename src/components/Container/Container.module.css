@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    scroll-margin-top: 70px;
+    scroll-margin-top: var(--header-height);
     background: linear-gradient(180deg, var(--background-secondary) 0%, var(--background-primary) 35%, var(--background-primary) 65%, var(--background-secondary) 100%);
     z-index: -1;
 }

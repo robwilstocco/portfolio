@@ -1,7 +1,22 @@
 import { FaBars } from 'react-icons/fa';
+import { RiCloseLargeLine } from "react-icons/ri";
+import { useState } from 'react';
 import styles from './Header.module.css';
+import classNames from 'classnames';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(prev => !prev);
+
+  const menuItems = [
+    { href: '#start', label: 'Inicio' },
+    { href: '#about', label: 'Sobre mim' },
+    { href: '#experiences', label: 'Experiências' },
+    { href: '#projects', label: 'Projetos' },
+    { href: '#certificates', label: 'Certificações' },
+    { href: '#skills', label: 'Skills' },
+  ];
+
   return (
     <>
       <header className={styles.header}>
@@ -12,22 +27,27 @@ const Header = () => {
             <span className={styles.right}>{'/>'}</span>
           </div>
           <img className={styles.miniLogo} src="miniLogo.png" alt="RW" />
-          <ul className={styles.menuList}>
-            <li><a className={styles.link} href="#start" >Inicio</a></li>
-            <li><a className={styles.link} href="#about">Sobre mim</a></li>
-            <li><a className={styles.link} href="#experiences">Experiências</a></li>
-            <li><a className={styles.link} href="#projects">Projetos</a></li>
-            <li><a className={styles.link} href="#certificates">Certificações</a></li>
-            <li><a className={styles.link} href="#skills">Skills</a></li>
+          <ul className={classNames(styles.menuList, { [styles.hide]: !isMenuOpen, [styles.show]: isMenuOpen })}>
+            {menuItems.map((item, index) => (
+              <li key={index}>
+                <a className={styles.link} href={item.href}>{item.label}</a>
+              </li>
+            ))}
           </ul>
           <div className={styles.hamburguer}>
-            <FaBars />
+            <button
+              onClick={toggleMenu}
+              aria-expanded={isMenuOpen}
+              aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+            >
+              {isMenuOpen ? <RiCloseLargeLine /> : <FaBars />}
+            </button>
           </div>
         </nav>
       </header>
       <div className={`${styles.progress} animation-progress`} />
     </>
-  )
-}
+  );
+};
 
 export default Header;

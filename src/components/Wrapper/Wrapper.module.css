@@ -4,3 +4,9 @@
     align-items: center;
     gap: 5rem;
 }
+
+@media(max-width: 480px) {
+    .wrapper {
+        gap: 2rem;
+    }
+}

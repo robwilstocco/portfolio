@@ -44,6 +44,10 @@
 
 /* MOBILE */
 @media (max-width: 480px) {
+  .title {
+    font-size: 4em;
+  }
+
   .image {
     display: none;
   }

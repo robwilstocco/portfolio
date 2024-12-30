@@ -28,7 +28,7 @@ svg:hover {
 }
 
 .project {
-    width: 300px;
+    width: 280px;
     height: 400px;
     color: var(--white);
     border: 1px solid var(--primary);
@@ -130,5 +130,6 @@ svg:hover {
 @media (max-width: 480px) {
     .carousel {
         width: 90%;
+        gap: 1rem;
     }
 }

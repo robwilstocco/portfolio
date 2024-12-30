@@ -1,6 +1,6 @@
 .title {
     color: var(--primary);
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .carousel {
@@ -23,10 +23,17 @@ svg {
 }
 
 button:disabled svg {
-    color: gray;
+    color: rgb(128, 128, 128);
     cursor: default;
 }
 
 svg:hover {
     color: var(--secondary);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .carousel {
+        gap: 1rem;
+    }
 }

@@ -1,13 +1,13 @@
-import { Inicio, Sobre, Certificacoes, Experiencias, Projetos, Skills } from './sections/index'
+import { Start, About, Certificates, Experiences, Projects, Skills } from './sections/index'
 
 function App() {
   return (
     <>
-      <Inicio />
-      <Sobre />
-      <Experiencias />
-      <Projetos />
-      <Certificacoes />
+      <Start />
+      <About />
+      <Experiences />
+      <Projects />
+      <Certificates />
       <Skills />
     </>
   );

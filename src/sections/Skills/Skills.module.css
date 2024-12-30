@@ -1,6 +1,6 @@
 .title {
     color: var(--primary);
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .skillsContainer {
@@ -8,4 +8,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .skillsContainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
 }

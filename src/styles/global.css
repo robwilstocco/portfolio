@@ -11,6 +11,10 @@
     --background-secondary: #0D0D0D;
 }
 
+body {
+    font-size: 17px;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
 }
@@ -22,4 +26,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--primary);
     border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 }

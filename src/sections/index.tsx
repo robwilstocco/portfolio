@@ -1,6 +1,6 @@
-export { default as Inicio } from './Inicio/Inicio';
+export { default as Start } from './Start/Start';
 export { default as Skills } from './Skills/Skills';
-export { default as Certificacoes } from './Certificacoes/Certificacoes';
-export { default as Experiencias } from './Experiencias/Experiencias';
-export { default as Projetos } from './Projetos/Projetos';
-export { default as Sobre } from './Sobre/Sobre';
+export { default as Certificates } from './Certificates/Certificates';
+export { default as Experiences } from './Experiences/Experiences';
+export { default as Projects } from './Projects/Projects';
+export { default as About } from './About/About';

@@ -17,6 +17,12 @@
     height: 70px;
 }
 
+.miniLogo {
+    filter: invert(75%) sepia(47%) saturate(5054%) hue-rotate(161deg) brightness(96%) contrast(99%);
+    height: 55px;
+    display: none;
+}
+
 .menuLogo {
     display: flex;
     justify-content: center;
@@ -61,6 +67,10 @@
     width: 100%;
 }
 
+.hamburguer {
+    display: none
+}
+
 .progress {
     width: 100vw;
     border-bottom: 4px solid var(--primary);
@@ -68,4 +78,25 @@
     background: transparent;
     position: fixed;
     transform-origin: 0 50%;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .menu {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .menuLogo,
+    .menuList {
+        display: none;
+    }
+
+    .miniLogo {
+        display: flex;
+    }
+
+    .hamburguer {
+        display: inline
+    }
 }

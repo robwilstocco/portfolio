@@ -129,7 +129,6 @@ svg:hover {
 /* MOBILE */
 @media (max-width: 480px) {
     .carousel {
-        width: 90%;
         gap: 1rem;
     }
 }

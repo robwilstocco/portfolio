@@ -13,18 +13,45 @@
 .leftButton,
 .rightButton {
     background-color: transparent;
-    border: none;
-}
-
-svg {
-    height: 40px;
-    width: 40px;
-    color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    flex-shrink: 0;
 }
 
-svg:hover {
-    color: var(--secondary);
+.leftButton:hover:not(:disabled),
+.rightButton:hover:not(:disabled) {
+    border-color: var(--primary);
+    background: rgba(27, 187, 245, 0.1);
+}
+
+.leftButton svg,
+.rightButton svg {
+    height: 28px;
+    width: 28px;
+    color: var(--primary);
+}
+
+.leftButton:disabled svg,
+.rightButton:disabled svg {
+    color: rgb(128, 128, 128);
+    cursor: default;
+}
+
+.leftButton:disabled,
+.rightButton:disabled {
+    cursor: default;
+}
+
+.projectList {
+    display: flex;
+    gap: 2rem;
 }
 
 .project {
@@ -56,6 +83,21 @@ svg:hover {
 .project:hover .projectDetail {
     opacity: 0;
     visibility: hidden;
+}
+
+.project::after {
+    content: "🔍";
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 0.85rem;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project:hover::after {
+    opacity: 0;
 }
 
 .project::before {
@@ -120,15 +162,101 @@ svg:hover {
     color: var(--primary);
 }
 
+.imageWrapper {
+    width: 100%;
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
 .aboutImage {
     width: 100%;
     height: auto;
     max-height: 200px;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+.imageVisible {
+    opacity: 1;
+}
+
+.imageHidden {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skeleton {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, var(--background-primary) 25%, #1a2d3d 50%, var(--background-primary) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.dots {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.dotActive {
+    background: var(--primary);
+}
+
+.dot:hover:not(.dotActive) {
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
     .carousel {
         gap: 1rem;
+    }
+}
+
+/* Touch devices: show links without hover */
+@media (hover: none) {
+    .project {
+        height: auto;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectDetail,
+    .projectLinks {
+        position: relative;
+        inset: unset;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .projectLinks {
+        flex-direction: row;
+        border-top: 1px solid var(--primary);
+        padding: 1rem 0;
     }
 }

@@ -54,34 +54,34 @@
 
 /*REVEALING*/
 .animation-revealing-left {
-  animation: revealing-right;
+  animation: revealing-left;
   animation-timeline: view(block);
   animation-range: cover 0% cover 50%;
 }
 
 .animation-revealing-right {
-  animation: revealing-left;
+  animation: revealing-right;
   animation-timeline: view(block);
   animation-range: cover 0% cover 50%;
 }
 
 @keyframes revealing-left {
   from {
-    margin-left: 50%;
-  }
-
-  to {
-    margin-left: 0;
-  }
-}
-
-@keyframes revealing-right {
-  from {
     margin-right: 50%;
   }
 
   to {
     margin-right: 0;
+  }
+}
+
+@keyframes revealing-right {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0;
   }
 }
 

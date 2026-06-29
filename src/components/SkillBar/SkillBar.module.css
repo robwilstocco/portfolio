@@ -12,6 +12,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.skillIcon {
+    font-size: 1.4rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.percent {
+    margin-left: auto;
 }
 
 .skillBar {
@@ -37,4 +50,6 @@
 .skillProgress {
     height: 20px;
     background-color: var(--secondary);
+    border-radius: 3px;
+    transition: width 1s ease-out;
 }

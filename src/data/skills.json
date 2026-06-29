@@ -1,34 +1,12 @@
 [
-    {
-        "name": "Javascript",
-        "percent": "90%"
-    },
-    {
-        "name": "HTML/CSS",
-        "percent": "80%"
-    },
-    {
-        "name": "React.js",
-        "percent": "85%"
-    },
-    {
-        "name": "Typescript",
-        "percent": "75%"
-    },
-    {
-        "name": "PostgreSQL",
-        "percent": "55%"
-    },
-    {
-        "name": "Redux.js",
-        "percent": "70%"
-    },
-    {
-        "name": "Next.js",
-        "percent": "65%"
-    },
-    {
-        "name": "Node.js",
-        "percent": "60%"
-    }
+    { "name": "Javascript", "percent": "90%", "icon": "SiJavascript" },
+    { "name": "React.js",   "percent": "85%", "icon": "SiReact" },
+    { "name": "Typescript", "percent": "80%", "icon": "SiTypescript" },
+    { "name": "Next.js",    "percent": "75%", "icon": "SiNextdotjs" },
+    { "name": "HTML/CSS",   "percent": "80%", "icon": "SiHtml5" },
+    { "name": "Material UI","percent": "75%", "icon": "SiMui" },
+    { "name": "Redux.js",   "percent": "70%", "icon": "SiRedux" },
+    { "name": "Tailwind CSS","percent": "65%","icon": "SiTailwindcss" },
+    { "name": "Styled Components","percent": "70%","icon": "SiStyledcomponents" },
+    { "name": "PostgreSQL", "percent": "55%", "icon": "SiPostgresql" }
 ]

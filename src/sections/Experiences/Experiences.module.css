@@ -16,33 +16,9 @@
 }
 
 .timeline ul li {
-    padding: 20px 20px;
+    padding: 0 20px;
     position: relative;
-    cursor: pointer;
     transition: .5s;
-}
-
-.timeline ul li span {
-    display: inline-block;
-    background-color: var(--primary);
-    color: var(--background-primary);
-    border-radius: 5px;
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-align: center;
-}
-
-.timeline ul li .content h3 {
-    color: var(--secondary);
-    font-size: 1.6em;
-    padding-top: 5px;
-}
-
-.timeline ul li .content p {
-    padding: 5px 0px 15px 0px;
-    font-size: 1.2em;
 }
 
 .timeline ul li:before {
@@ -54,22 +30,84 @@
     border: 2px solid var(--background-primary);
     border-radius: 50%;
     left: -12px;
-    top: 25px;
+    top: 20px;
     transition: .5s;
 }
 
-.timeline ul li:hover {
-    background-color: var(--background-secondary);
-}
-
+.timeline ul li.open:before,
 .timeline ul li:hover:before {
     background-color: var(--secondary);
     box-shadow: 0px 0px 10px 2px var(--secondary);
 }
 
+.accordionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 18px 0;
+    gap: 1rem;
+    text-align: left;
+}
+
+.accordionHeader span {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--background-primary);
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.chevron {
+    color: var(--primary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.chevronOpen {
+    transform: rotate(180deg);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+    overflow: hidden;
+}
+
+.contentOpen {
+    grid-template-rows: 1fr;
+}
+
+.content > div {
+    overflow: hidden;
+}
+
+.content h3 {
+    color: var(--secondary);
+    font-size: 1.6em;
+    padding-top: 5px;
+}
+
+.content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 1.1em;
+    color: var(--white);
+}
+
 /* MOBILE */
 @media (max-width: 480px) {
     .timeline {
-        width: 70%;
+        width: 80%;
+    }
+
+    .accordionHeader span {
+        font-size: 0.95em;
     }
 }

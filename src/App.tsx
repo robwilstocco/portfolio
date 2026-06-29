@@ -1,4 +1,4 @@
-import { Start, About, Certificates, Experiences, Projects, Skills } from './sections/index'
+import { Start, About, Certificates, Experiences, Projects, Skills, Contact } from './sections/index'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Projects />
       <Certificates />
       <Skills />
+      <Contact />
     </>
   );
 }

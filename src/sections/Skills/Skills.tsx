@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <Container id='skills'>
             <Wrapper animation="animation-revealing-left" direction="column">
-                <h1 className={styles.title}>{`<${'Skills'}/>`}</h1>
+                <h2 className={styles.title}>{`<${'Skills'}/>`}</h2>
                 <div className={styles.skillsContainer}>
                     {skills.map((skill, index) => (
                         <SkillBar key={index} name={skill.name} percent={skill.percent} />

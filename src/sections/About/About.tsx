@@ -12,13 +12,15 @@ const About = () => {
                         <h2 className={styles.aboutTitle}>{'< Sobre mim/>'}</h2>
                         <div>
                             <p className={styles.text}>
-                                Desde pequeno interessado por tecnologia e sempre curioso para descobrir como as
-                                coisas funcionam. Essa curiosidade acabou me levando à carreira de desenvolvedor,
-                                onde pude ver a mágica de códigos se tornarem belas interfaces e sistemas inteiros.
+                                Desenvolvedor Frontend com foco em aplicações web B2B, especializado em React, Next.js e TypeScript.
+                                Tenho experiência em arquitetura de aplicações enterprise, dashboards analíticos, controle de acesso
+                                granular e integração com APIs REST, sempre com foco em clareza, segurança e escalabilidade.
                             </p>
                             <p className={styles.text}>
-                                Sou formado em Ciência da Computação e possuo experiência em Desenvolvimento Frontend, onde atuei em diversos
-                                projetos de modernização de sistemas legados em Flash.
+                                Formado em Ciência da Computação pela Universidade Cruzeiro do Sul, atuei com alto grau de autonomia
+                                técnica em projetos enterprise, participando da definição de arquitetura frontend, autenticação com
+                                Azure AD e implementação de padrões BFF via Next.js. Embora atue como full stack quando necessário,
+                                mantenho o frontend como foco central da solução.
                             </p>
                         </div>
                     </div>

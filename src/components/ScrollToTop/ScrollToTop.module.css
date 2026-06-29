@@ -1,0 +1,24 @@
+.button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    background: var(--background-primary);
+    color: var(--primary);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.button:hover {
+    background: var(--primary);
+    color: var(--background-primary);
+}

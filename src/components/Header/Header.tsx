@@ -15,6 +15,7 @@ const Header = () => {
     { href: '#projects', label: 'Projetos' },
     { href: '#certificates', label: 'Certificações' },
     { href: '#skills', label: 'Skills' },
+    { href: '#contact', label: 'Contato' },
   ];
 
   return (
@@ -30,7 +31,7 @@ const Header = () => {
           <ul className={classNames(styles.menuList, { [styles.hide]: !isMenuOpen, [styles.show]: isMenuOpen })}>
             {menuItems.map((item, index) => (
               <li key={index}>
-                <a className={styles.link} href={item.href}>{item.label}</a>
+                <a className={styles.link} href={item.href} onClick={() => setIsMenuOpen(false)}>{item.label}</a>
               </li>
             ))}
           </ul>

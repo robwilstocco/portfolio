@@ -13,7 +13,7 @@ interface CertificateType {
 const Certificate = ({ certificate }: CertificateType) => {
     return (
         <div className={`${styles.certificate}`}>
-            <h3 className={styles.certicateTitle}>{certificate.title}</h3>
+            <h3 className={styles.certificateTitle}>{certificate.title}</h3>
             <div className={styles.details}>
                 <div className={styles.info}>
                     <span>Instituição: </span>
@@ -29,7 +29,7 @@ const Certificate = ({ certificate }: CertificateType) => {
                 </div>
                 <div className={styles.info}>
                     <span>Certificado: </span>
-                    <a href={certificate.url}>Clique aqui</a>
+                    <a href={certificate.url} target="_blank" rel="noopener noreferrer" aria-label={`Ver certificado: ${certificate.title}`}>Ver certificado</a>
                 </div>
             </div>
         </div>
